@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --text-color: white;
+    --bg-url:  url(assets/bg-mobile.jpg);
+    --stroke-color: rgba(255,255,255,0.5);
+  
+}
+
+
+body{
+
+background:var(--bg-url);
+background-repeat: no-repeat;
+background-position: top center;
+background-size: cover;
+color: var(--text-color);
+    
+}
+
+body* {
+
+    font-family: 'Khula', sans-serif;
+    color: var(--text-color);
+    
+}
+
+
+#container{
+    width: 360px;
+
+    margin: 56px auto 0px;
+
+}
+
+/*profile*/
+
+#profile {
+
+   text-align: center;
+
+}
+
+#profile img{
+
+    width: 150px;
+    border-radius: 100%;
+     
+}
+
+#profile p{
+
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+
+/*liks*/
+
+    ul{
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        padding: 24px 0;
+        
+    }
+
+    ul li a {
+
+        font-family: 'Khula', sans-serif;
+    color: var(--text-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 16px 24px;
+
+        background:  rgb(0, 0, 0);  
+        border: 1px solid var(--stroke-color);
+        border-radius: 8%;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+   
+        text-decoration: none;
+        font-weight: 400;
+
+    }
+
+    /* pseudo-selector */
+
+    ul li a:hover{
+        background:  rgba(0, 0, 0, 0.3);
+        border: 1.5px solid var(--text-color);
+    }
+
+    #social-links{
+
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        padding: 24px 0;
+
+        font-size: 24px;
+    
+    }
+
+    #social-links a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+
+        transition: background o.2s;
+        border-radius: 50%;
+    }
+
+    #social-links a:hover{
+        background:  rgba(0, 0, 0, 0.3);
+        padding: 16px;
+        border-radius: 50%;
+    }
+
+    footer{
+        
+        font-family: 'Khula', sans-serif;
+    color: var(--text-color);
+        
+        padding: 24px;
+        text-align: center;
+    }
